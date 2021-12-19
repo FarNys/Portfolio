@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Lusitana&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+$font_main: "Cormorant Garamond", serif;
+$font_text: "Lusitana", serif;
+
+$color_red_1: #e53935;
+$color_red_2: #dc2430;
+
+$color_gray_1: #485563;
+$color_gray_2: #304352;
+$color_gray_3: #29323c;
+
+$color_white_1: #dfdfdf;
+$color_white_2: #efefef;
+$color_white_3: #fff;
