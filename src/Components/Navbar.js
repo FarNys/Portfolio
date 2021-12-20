@@ -1,22 +1,20 @@
 import React from "react";
-
+import "../Styles/Navbar.scss";
 const Navbar = () => {
   return (
     <div className="navbar_container">
-      <ul>
-        <li>
-          <a href="">Main</a>
-        </li>
-        <li>
-          <a href="">Project</a>
-        </li>
-        <li>
-          <a href="">About</a>
-        </li>
-        <li>
-          <a href="">Contact</a>
-        </li>
-      </ul>
+      <li>
+        <a href="#main">Main</a>
+      </li>
+      <li>
+        <a href="#projects">Projects</a>
+      </li>
+      <li>
+        <a href="#about">About</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
     </div>
   );
 };

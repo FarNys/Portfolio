@@ -1,0 +1,8 @@
+.navbar_container {
+  display: flex;
+  background-color: white;
+  position: fixed;
+}
+.navbar_container.fade {
+  opacity: 0.1;
+}
