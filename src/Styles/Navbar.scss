@@ -1,8 +1,41 @@
-.navbar_container {
-  display: flex;
-  background-color: white;
+@import "../Index.scss";
+.navbar_box {
+  width: 100%;
+  background-color: $color_gray_2;
+  height: 60px;
   position: fixed;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
 }
-.navbar_container.fade {
-  opacity: 0.1;
+.navbar_container {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  // left: 50%;
+  // transform: translateX(-50%);
+  padding: 1rem 0.2rem 0.2rem 0.2rem;
+  li {
+    list-style: none;
+    margin-right: 10px;
+    a {
+      text-decoration: none;
+      font-family: $font_text;
+      font-size: 1.5rem;
+      color: $color_white_1;
+    }
+  }
+}
+.underline {
+  position: absolute;
+  width: 55px;
+  height: 5px;
+  background-color: $color_white_1;
+  border-radius: 12px;
+  bottom: 5px;
+  transition: 0.2s linear all;
+  left: 3px;
+}
+.navbar_box.fade {
+  opacity: 0.2;
 }

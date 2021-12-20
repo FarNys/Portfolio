@@ -91,9 +91,24 @@
     background-color: $color_red_1;
     border-radius: 50%;
     width: 20px;
+    // left: 0;
     @for $i from 1 through 3 {
       &:nth-of-type(#{$i}) {
-        left: $i * 30px - 30px;
+        // left: $i * 30px - 30px;
+        left: 0;
+        animation-name: animeA-#{$i};
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-delay: 1.5s;
+        animation-fill-mode: forwards;
+      }
+      @keyframes animeA-#{$i} {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX($i * 30px - 30px);
+        }
       }
     }
   }
@@ -108,9 +123,24 @@
     background-color: $color_red_1;
     border-radius: 50%;
     width: 20px;
+
     @for $i from 1 through 3 {
       &:nth-of-type(#{$i}) {
         right: $i * 30px - 30px;
+        transform: translateX($i * 30px - 30px);
+        animation-name: animeB-#{$i};
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-delay: 1.5s;
+        animation-fill-mode: forwards;
+      }
+      @keyframes animeB-#{$i} {
+        from {
+          transform: translateX($i * 30px - 30px);
+        }
+        to {
+          transform: translateX(0);
+        }
       }
     }
   }
