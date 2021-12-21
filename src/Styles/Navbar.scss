@@ -7,6 +7,8 @@
   display: flex;
   justify-content: center;
   z-index: 100;
+  opacity: 1;
+  transition: 0.2s ease opacity;
 }
 .navbar_container {
   position: relative;
@@ -21,7 +23,7 @@
     a {
       text-decoration: none;
       font-family: $font_text;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       color: $color_white_1;
     }
   }
@@ -38,4 +40,10 @@
 }
 .navbar_box.fade {
   opacity: 0.2;
+  transition: 0.2s ease opacity;
+
+  &:hover {
+    opacity: 1;
+    transition: 0.2s ease opacity;
+  }
 }
