@@ -25,10 +25,12 @@
   aspect-ratio: 1.3;
   border: 1px solid red;
   display: flex;
+
   img {
     height: 100%;
     flex: 1;
     object-fit: cover;
+    transform: perspective(1300px) rotateY(20deg) scale(0.9);
   }
 }
 .project_right {
