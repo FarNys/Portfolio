@@ -6,6 +6,8 @@ import {
   FaChevronCircleLeft,
   FaAngleRight,
   FaGithub,
+  FaCircle,
+  FaLink,
 } from "react-icons/fa";
 
 const Projects = () => {
@@ -52,7 +54,7 @@ const Projects = () => {
   return (
     <div className="projects_container" id="projects">
       <div className="project_top_part">
-        <div className="project_left">
+        <a className="project_left" href={link}>
           <img
             src={image}
             alt="projectImage"
@@ -62,7 +64,7 @@ const Projects = () => {
             <h6>Description</h6>
             <p>{description}</p>
           </div>
-        </div>
+        </a>
         <div className="project_right">
           <div className="project_right_name">
             <FaChevronCircleLeft
@@ -76,7 +78,10 @@ const Projects = () => {
             />
           </div>
           <div className="project_right_stack">
-            <h2>Tech stack</h2>
+            <h2>
+              <FaCircle className="cirlce_icon" />
+              Tech stack
+            </h2>
             {tools.map((el, id) => (
               <li key={id}>
                 <FaAngleRight className="icon_icon" />
@@ -85,19 +90,30 @@ const Projects = () => {
             ))}
           </div>
           <div className="project_right_stack">
-            <h2>Features</h2>
+            <h2>
+              <FaCircle className="cirlce_icon" />
+              Tools
+            </h2>
             <li>
               <FaAngleRight className="icon_icon" />
               Authentication: {auth}
             </li>
-            <li>
-              <FaAngleRight className="icon_icon" />
-              ApiLink: {apiLink}
-            </li>
-            <li>
-              <FaAngleRight className="icon_icon" />
-              InspiredBy: <a href={inspiredByLink}>{inspiredBy}</a>
-            </li>
+            {apiLink !== "" && (
+              <li>
+                <FaAngleRight className="icon_icon" />
+                ApiLink:
+                <a href={apiLink}>
+                  <FaLink />
+                </a>
+              </li>
+            )}
+
+            {inspiredBy !== "" && (
+              <li>
+                <FaAngleRight className="icon_icon" />
+                InspiredBy: <a href={inspiredByLink}>{inspiredBy}</a>
+              </li>
+            )}
 
             <li>
               <FaAngleRight className="icon_icon" />
@@ -117,7 +133,15 @@ const Projects = () => {
                 Colors:
               </li>
               {colors.map((color, id) => (
-                <span key={id + 10} style={{ backgroundColor: color }}></span>
+                <div className="color_box">
+                  <span key={id + 10} style={{ backgroundColor: color }}></span>
+                  <div
+                    className="hover_color"
+                    style={{ border: `1px solid ${color}` }}
+                  >
+                    {color}
+                  </div>
+                </div>
               ))}
             </div>
           </div>
