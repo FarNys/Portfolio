@@ -144,7 +144,7 @@ const Projects = () => {
               </li>
               {colors.map((color, id) => (
                 <div className="color_box">
-                  <span key={id + 10} style={{ backgroundColor: color }}></span>
+                  <span key={id * 10} style={{ backgroundColor: color }}></span>
                   <div
                     className="hover_color"
                     style={{ border: `1px solid ${color}` }}

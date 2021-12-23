@@ -1,0 +1,88 @@
+@import "../Index.scss";
+.contact_container {
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: $color_gray_3;
+  overflow: hidden;
+  p {
+    width: 100%;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin: 30px 0;
+    font-family: $font_text;
+    color: $color_white_1;
+    font-size: 1.5rem;
+  }
+}
+.contact_box {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  max-width: 600px;
+  width: 90%;
+  margin: 30px 0;
+  padding: 1rem;
+  flex-wrap: wrap;
+
+  .box {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 4rem;
+    margin-right: 1rem;
+    padding: 1.5rem;
+    position: relative;
+    border-radius: 50%;
+    transition: 0.2s ease all;
+
+    &:hover {
+      span {
+        transform: scale(1);
+        opacity: 1;
+        transition: 0.2s ease all;
+      }
+      .icon_for_contact {
+        color: $color_gray_3 !important;
+        transition: 0.2s ease all;
+      }
+    }
+
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      border-radius: 50%;
+      transform: scale(0);
+      transition: 0.2s ease all;
+    }
+    .icon_for_contact {
+      z-index: 100;
+      transition: 0.2s ease all;
+    }
+  }
+}
+.email_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  box-shadow: 0 0 6px 0 $color_white_1;
+  margin: 30px 0;
+  li {
+    list-style: none;
+    font-size: 1.4rem;
+    padding: 1.5rem;
+    font-family: $font_text;
+    // font-weight: 600;
+    letter-spacing: 2px;
+    color: $color_white_1;
+  }
+}

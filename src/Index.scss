@@ -6,6 +6,11 @@
   margin: 0;
   scroll-behavior: smooth;
 }
+@media (max-width: 600px) {
+  * {
+    font-size: 0.95em;
+  }
+}
 
 $font_main: "Cormorant Garamond", serif;
 $font_text: "Lusitana", serif;
