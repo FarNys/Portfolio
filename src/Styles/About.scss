@@ -1,0 +1,75 @@
+@import "../Index.scss";
+.about_container {
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: $color_white_2;
+  overflow: hidden;
+  a {
+    color: $color_gray_2;
+  }
+}
+.about_box {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  margin: 50px 0;
+  padding: 2rem;
+  line-height: 2.2rem;
+  font-size: 1.4rem;
+  border-radius: 24px;
+  box-shadow: 0 0 6px 0 $color_white_3;
+  overflow: hidden;
+  p {
+    font-family: $font_text;
+    span {
+      color: $color_red_1;
+      font-weight: 600;
+      position: relative;
+      transition: 0.2s ease all;
+      padding: 1px !important;
+      border-bottom: 1px solid $color_red_1;
+      font-family: $font_main;
+      &:hover {
+        color: $color_red_2;
+      }
+    }
+  }
+}
+
+.shape_one {
+  position: absolute;
+  bottom: 50%;
+  right: 100%;
+  transform: translate(50%, 50%);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: $color_red_2_1;
+  // filter: blur(7px);
+}
+.shape_two {
+  position: absolute;
+  bottom: 50%;
+  left: 100%;
+  transform: translate(-50%, 50%);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: $color_red_2_1;
+  // filter: blur(7px);
+}
+.shape_three {
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  width: 7rem;
+  height: 7rem;
+  background-color: $color_red_2_1;
+  border-radius: 50%;
+  filter: blur(3px);
+}

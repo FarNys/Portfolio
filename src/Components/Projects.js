@@ -9,6 +9,7 @@ import {
   FaCircle,
   FaLink,
 } from "react-icons/fa";
+import Title from "./Title";
 
 const Projects = () => {
   const [index, setindex] = useState(0);
@@ -53,6 +54,7 @@ const Projects = () => {
   };
   return (
     <div className="projects_container" id="projects">
+      <Title text="projects" />
       <div className="project_top_part">
         <a className="project_left" href={link}>
           <img
@@ -80,7 +82,7 @@ const Projects = () => {
           <div className="project_right_stack">
             <h2>
               <FaCircle className="cirlce_icon" />
-              Tech stack
+              Tech Stack
             </h2>
             {tools.map((el, id) => (
               <li key={id}>
@@ -111,13 +113,21 @@ const Projects = () => {
             {inspiredBy !== "" && (
               <li>
                 <FaAngleRight className="icon_icon" />
-                InspiredBy: <a href={inspiredByLink}>{inspiredBy}</a>
+                InspiredBy:{" "}
+                <a href={inspiredByLink}>
+                  <FaLink />
+                  {inspiredBy}
+                </a>
               </li>
             )}
 
             <li>
               <FaAngleRight className="icon_icon" />
-              Host: <a href={link}>{host}</a>
+              Host:{" "}
+              <a href={link}>
+                <FaLink />
+                {host}
+              </a>
             </li>
 
             <li>
