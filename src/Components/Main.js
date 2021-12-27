@@ -29,7 +29,7 @@ const Main = () => {
             <div className="ball ball_five ballBot"></div>
             <div className="ball ball_six ballBot"></div>
           </div>
-          <p>I will bring value to your business.</p>
+          <p>Speed up your start up with customized website & webapp</p>
         </div>
       </div>
     </div>
