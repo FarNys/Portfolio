@@ -7,7 +7,7 @@ const Main = () => {
     <div className="main_container" id="main">
       <div className="main_box">
         <div className="main_left">
-          <img src="images/person.png" alt="portfolio_image" />
+          <img src="images/WebDev.png" alt="portfolio_image" />
         </div>
         <div className="main_right">
           <div className="ball_top_container">

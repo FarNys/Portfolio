@@ -74,12 +74,19 @@
   justify-content: center;
   align-items: center;
   border-radius: 24px;
-  box-shadow: 0 0 6px 0 $color_white_1;
-  margin: 30px 0;
+  // box-shadow: 0 0 6px 0 $color_white_1;
+  // margin: 30px 0;
+
+  margin-right: auto;
+  margin-left: 65px;
+  .icon_for_contact {
+    font-size: 2rem;
+  }
+
   li {
     list-style: none;
-    font-size: 1.4rem;
-    padding: 1.5rem;
+    font-size: 1rem;
+    padding: 1.1rem;
     font-family: $font_text;
     // font-weight: 600;
     letter-spacing: 2px;

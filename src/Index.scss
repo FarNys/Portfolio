@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Lusitana&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
 
 * {
   box-sizing: border-box;
@@ -8,12 +10,14 @@
 }
 @media (max-width: 600px) {
   * {
-    font-size: 0.95em;
+    font-size: 0.9em;
   }
 }
-
-$font_main: "Cormorant Garamond", serif;
-$font_text: "Lusitana", serif;
+// font-family: 'Poppins', sans-serif;
+// $font_text: "Lusitana", serif;
+// font-family: 'Play', sans-serif;
+$font_main: "Play", sans-serif;
+$font_text: "Poppins", sans-serif;
 
 $color_red_1: #e53935;
 $color_red_1_1: #e53935aa;
