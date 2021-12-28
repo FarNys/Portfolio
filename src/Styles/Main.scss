@@ -19,15 +19,15 @@
       opacity: 0;
 
       display: flex;
-      margin: 100px 30px;
+      margin: 90px 30px 50px 30px;
       max-width: 360px;
       animation: mLeft;
-      animation-duration: 1s;
+      animation-duration: 1.2s;
       animation-fill-mode: forwards;
       @keyframes mLeft {
         from {
           opacity: 0;
-          transform: translateX(-50px);
+          transform: translateX(-75px);
         }
         to {
           opacity: 1;
