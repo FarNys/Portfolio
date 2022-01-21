@@ -12,15 +12,13 @@ const About = () => {
           HTML/CSS and immediately find my path to become a developer.
           simplicity capability of styling everything was the main reason. Next
           step for sure was JavaScript as the one and only frontend web language
-          and then master the most famous framework React.
+          and then master the most famous library, React.
           <br />
           I started to make tons of projects that you can find some projects in
           top part.
-          <br />
-          Nowadays i enjoy creating website and webapp with modern technologies
-          and stacks like <span>React</span>, <span>Redux</span>,{" "}
-          <span>Sass</span>, <span>Material UI</span>, <span>Github</span> and
-          ... .
+          <br />I enjoy creating website and webapp with modern technologies and
+          stack like <span>React</span>, <span>Redux</span>, <span>Sass</span>,{" "}
+          <span>Material UI</span>, <span>Github</span> and ... .
           {/* and
           ... , Next step is mastering JavaScript backend technology like
           <span> NodeJs</span>, <span>Express</span> and <span>MongoDB</span>.{" "} */}
